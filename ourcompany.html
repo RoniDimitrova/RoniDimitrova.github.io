@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link href="trial.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<div class="header">
+			<img src="paradoxlogo.png" alt="logo" style="width:120px;height:100px;">
+			<div>Games for strategists. <br>A leading global publisher of strategy games for PC</div>
+			<div class="searchbar">
+				<form action="http://www.example.com">
+					<input type="text" placeholder="Search...">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+			
+		</div>
+		
+		<div class="content">
+			<div class="left">
+				<button class=closeMenu>Close</button>
+				<div class="sidemenu">
+					<a href="home.html">Home</a>
+					<a href="about.html">About</a>
+					<div class="dropdown">
+						<a href="ourcompany.html">Our company</a>
+						<a href="career.html">Career</a>
+					</div>
+					<a href="services.html">Services</a>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
+		
+			<div class="right">
+				<h1>Our company</h1>
+				<h2>The Paradox group</h2>
+				<img src="company.jpg" alt="company" style="width:500px;height:350px;">
+				<h3>Our vision is to make the world a nerdier place.</h3>
+
+				<p>The Paradox group today consists of both publishing and internal development of games and brands. Our shared goal is to provide deep and challenging games and experiences, with hours of gameplay and endless variety, to our ever-growing community.
+
+				The Paradox game portfolio includes more than 100 titles and Paradox owns the most important brands, including <b>Stellaris, Cities: Skylines, Europa Universalis, Hearts of Iron, Crusader Kings, Prison Architect, Magicka, Age of Wonders,</b> and the <b>World of Darkness catalogue of brands</b>.<br>
+
+				Since the company was founded in 2004 we have published our games all over the world, initially through physical distribution but since 2006 primarily through digital channels. Paradox games are developed primarily for PC and console platforms, but we also release games on mobile platforms. Our largest markets include the US, UK, China, Germany, France, Russia and Scandinavia. Over five million gamers play a Paradox game each month, and the number of registered Paradox users exceeds 18 million.
+
+				Paradox's head offices are located in Stockholm, Sweden. Our development studios are located in Stockholm, Malmö and Umeå, Sweden, in Delft, The Netherlands, in Seattle, Washington, in Berkeley, California, in Barcelona, Spain, in Tampere, Finland, and in Paris, France.
+
+				For more information, please visit <a href="https://www.paradoxplaza.com">paradoxplaza.com</a>, join our forums and follow us on <a href="https://www.facebook.com">Facebook</a> and <a href="https://www.twitter.com">Twitter</a>.</p>
+			</div>
+		</div>
+		
+		<div class="footer">
+						
+			<div class="footerCont">
+				<div class="social">
+					<a href="https://www.facebook.com/ParadoxInteractive" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/PdxInteractive" class="fa fa-twitter"></a>
+					<a href="https://www.youtube.com/user/Paradoxplaza" class="fa fa-youtube"></a>
+					<a href="https://vk.com/pdxint" class="fa fa-vk"></a>
+					<a href="https://open.spotify.com/artist/75N2nC2KNgaQ1e6bGs0wyc" class="fa fa-spotify"></a>
+				</div>
+				<div class="column">
+					<a href="ourcompany.html">Our company</a>
+					<a href="ourcompany.html">The Paradox Formula</a>
+					<a href="ourcompany.html">Investors</a>
+					<a href="ourcompany.html">Prospectuses</a>
+				</div>
+				<div class="column">
+					<a href="services.html">Latest events</a>
+					<a href="services.html">Calendar</a>
+					<a href="services.html">Press Releases</a>
+					<a href="services.html">Our company</a>
+				</div>
+				<div class="column">
+					<a href="contact.html">Contact</a>
+					<a href="contact.html">Support</a>
+					<a href="contact.html">Review Codes and Product PR</a>
+				</div>
+			</div>		
+			<div class="trademark">© 2021 Paradox Interactive AB. All trademarks are the property of their respective owners. Paradox Interactive AB, Magnus Ladulåsgatan 4, SE-118 66 Stockholm, Sweden. Swedish company registration number 556667-4759.<br><a href="about.html">Privacy Policy</a> | <a href="home.html">Terms of Use</a></div>
+			
+
+
+
+		</div>
+
+
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script> 
+
+        jQuery(document).ready(function(){
+			$(".sidemenu > a:nth-child(2)").hover(function(){
+			$(".dropdown").toggleClass("deployed");
+			});
+			
+			$(".dropdown").hover(function(){
+			$(this).toggleClass("deployed");
+			});
+			
+			$(".closeMenu").click(function(){
+			$(".sidemenu").slideToggle();
+			$(".closeMenu").html($(".closeMenu").html() == "Close" ? "Show" : "Close");
+			});
+		});
+		</script>
+	</body>
+	
+</html>

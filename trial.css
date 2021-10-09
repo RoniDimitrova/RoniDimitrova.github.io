@@ -1,0 +1,341 @@
+/*For all pages*/
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+	background-image: url("blowup.jpg");
+	background-repeat: repeat;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	background: #101010;
+}
+
+.header img {
+	float: left;
+	margin: 10px;
+}
+
+.header div {
+	color: white;
+	font-weight: bold;
+	font-size: 1.4em;
+	margin: auto;
+}
+
+.searchbar {
+	overflow: hidden;
+}
+
+.searchbar input[type=text] {
+  padding: 6px;
+  margin-top: 30px;
+  font-size: 0.7em;
+  border: none;
+  width: 370px; 
+}
+
+.searchbar button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 30px;
+  margin-right: 16px;
+  background: red;
+  font-size: 0.7em;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.fa-search {
+	color: white;
+}
+
+.searchbar button:hover {
+	background-color: #3bbae6;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+	background: rgba(13, 12, 12, 0.95);
+	
+}
+
+.left {
+	flex: 20%;
+	height: 600px;
+	padding: 10px;
+}
+
+.right {
+	color: white;
+	flex: 75%;
+	margin-right: 5px;
+	padding: 10px;	
+}
+
+.right a {
+	color: #3bbae6;
+}
+
+h3 {
+	color: #c62a3f; 
+}
+
+.footer {
+	background: #101010;
+	padding: 10px 40px;
+}
+
+.social {
+	text-align: center;
+}
+
+.social a {
+	padding: 15px;
+	text-align: center;
+	font-size: 1.4em;
+	width: 25px;
+	text-decoration: none;
+	margin: 2px;
+	border-radius: 50%;
+	background: #3bbae6;
+	color: black;
+}
+
+.social a:hover {
+    opacity: 0.7;
+	color: white;
+}
+
+.footerCont {
+	display: flex;
+}
+
+.column, .social {
+	flex: 100%;
+	padding: 20px;
+	margin: 20px;
+}
+
+.column a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+
+.column a:hover {
+	color: white;
+	background-color: #3bbae6;
+}
+
+.trademark {
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin: 10px;
+	font-size: 0.8em;
+}
+
+.trademark a {
+	color: #3bbae6;
+}
+
+.trademark a:visited {
+	color: hotpink;
+}
+
+/*Side menu*/
+
+.closeMenu {
+	padding: 10px 15px 10px 15px;
+	background: red;
+	font-size: 1em;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.closeMenu:hover {
+	opacity: 0.7;
+	
+}
+.sidemenu {
+	width: 240px;
+}
+
+.sidemenu > a {
+	background-image: linear-gradient(to bottom, #707781, #6a717b, #636b75, #5d6570, #575f6a);
+	padding: 10px 25px 8px 25px;
+	text-decoration: none;
+	font-size: 1.4em;
+	color: white;
+	display: block;
+	border-bottom: 1px solid #292c33;
+	border-top: 1px solid #8f98a9;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+.sidemenu a:hover {
+    background-color: background: #3DB9E7;
+	background: webkit-linear-gradient(to top, #3DB9E7, #2892C9);
+	background: moz-linear-gradient(to top, #3DB9E7, #2892C9);
+	background: linear-gradient(to bottom, #3DB9E7, #2892C9);
+}
+
+.dropdown {
+	display: none;
+}
+
+.dropdown a {
+	background-image: linear-gradient(to top, #17181a, #1c1e20, #212326, #27292c, #2c2f32);
+	text-indent: 25px;
+	font-size: 1.1em;
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 10px 25px 8px 25px
+}
+
+.deployed {
+	display: block;
+}
+	
+/*Home page*/
+
+.righthome {
+	background-image: url("stellaris.jpg");
+	background-size: cover;
+	color: black;
+	font-weight: bold;
+	flex: 75%;
+	text-align: center;
+	border: 5px solid #101010;
+}
+
+.righthome h1 {
+	padding-top: 20%;
+	text-shadow: 2px 2px 5px white;
+}
+
+.righthome h2, .righthome p {
+	text-shadow: 2px 2px 5px white;
+}
+	
+.righthome a {
+	padding: 10px 25px;
+	background: #101010;
+	text-decoration: none;
+	font-size: 1em;
+	color: white;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.righthome a:hover {
+	background-color: red;
+}
+
+/*About page*/
+
+.about {
+	background-image: url("stellaris6.jpg");
+	background-size: cover;
+	color: white;
+	font-weight: bold;
+	flex: 75%;
+	border: 5px solid #101010;
+}
+
+.about h1 {
+	margin-top: 15%;
+	font-size: 3.7em;
+	text-shadow: 2px 2px 5px black;
+	text-align: center;
+}
+
+.aboutbuttons {
+	display: flex;
+	padding: 40px;
+}
+
+.aboutbuttons a {
+	width: 100%;
+	padding: 20px 10px;
+	margin: 10px;
+	background: black;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.aboutbuttons a:hover {
+	background-color: #3bbae6;  
+}
+/*Our Company*/
+
+img[alt="company"] {
+	float:left;
+	margin-right: 25px;
+	margin-bottom: 5px;
+	border: 2px solid black;
+}
+
+p a:visited {
+	color: hotpink;
+}
+
+/* Career*/
+
+img[alt="career"] {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	border: 2px solid black;
+}
+
+/*Services*/
+
+img[alt="services"] {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	border: 2px solid black;
+}
+
+/*Contact page*/
+
+.subscontainer {
+	width: 400px;
+}
+	
+input[type=text] {
+	width: 100%;
+	padding: 10px;
+	float: inline-block;
+}
+
+input[type=submit] {
+	color: white;
+	font-size: 1em;
+	background: red;
+	padding: 15px;
+	border:none;
+	margin: 1px;
+}
+
+input[type=submit]:hover {
+	background: #3bbae6;
+}
